@@ -4,21 +4,17 @@ import { Component } from 'react';
 import './App.css';
 
 class ReadingNumbers extends Component {
-  state = {
-    number: 0
+  constructor(props) {
+    super(props)
+    this.state = {number: 0}
   }
   
   changeNumber = () => {
-    let number = ++this.state.number
-    this.setState({
-      number
-    });
+    this.setState({ number: this.state.number + 1 })
   }
 
   resetNumber = () => {
-    this.setState({
-      number: 0
-    })
+    this.setState({ number: 0 })
   }
 
   
