@@ -1,7 +1,7 @@
 // import logo from '../resources/logo.svg';
 import redo from '../resources/redo.png'
 import { Component } from 'react';
-import './App.css';
+import './App.scss';
 
 class ReadingNumbers extends Component {
   constructor(props) {
@@ -22,19 +22,19 @@ class ReadingNumbers extends Component {
     const {number} = this.state;
 
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="app">
+        <header className="app__header">
           <button 
-            className='button-circle'
+            className='app__btn-plus'
             onClick={this.changeNumber}
           >+</button>
           <img 
+            className='app__btn-reset' 
             src={redo} 
             alt="reset" 
-            className='btn-reset' 
             onClick={this.resetNumber}
           />
-          <p className='resault-number'>{number}</p>
+          <p className='app__resault-number'>{number}</p>
         </header>
       </div>
     );
