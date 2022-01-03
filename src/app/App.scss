@@ -1,32 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Oswald:wght@700&display=swap');
+@import '../style/variables.scss';
+@import '../style/mixins.scss';
 
 .app{
     text-align: center;
     &__header{
+        @include flex(center, center, column);
         background-color: #525558;
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         font-size: calc(10px + 2vmin);
         color: white;
     }
     &__btn-plus{
-        width: 200px;
-        height: 200px;
+        @include size(200px);
         background-color: #525558;
         border-radius: 50%;
         border: none;
         cursor: pointer;
-        font-size: 50px;
-        color: white;
+        @include text($H500, white);
         box-shadow: 0px 0px 20px 15px rgb(72, 75, 78);
         margin-bottom: 20px;
         outline: none;
         &:hover{
             box-shadow: 0px 0px 10px 7px rgb(72, 75, 78);
-            transition: .5s;
+            @include transition(all);
         }
         &:active{
             box-shadow: inset 0px 0px 10px 7px rgb(72, 75, 78);
@@ -39,7 +36,7 @@
         color: red;
     }
     &__resault-number{
-        font-size: 40px;
+        @include text($H400);
         font-family: 'Roboto', sans-serif;
     }
 }
