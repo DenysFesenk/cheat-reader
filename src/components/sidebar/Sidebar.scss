@@ -1,0 +1,19 @@
+@import '../../style/variables.scss';
+@import '../../style/mixins.scss';
+
+.sidebar{
+    width: 170px;
+    z-index: 1;
+    background-color: #65696d;
+    box-shadow: 0px 0px 20px 15px rgb(72, 75, 78);
+    &__title{
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    &__item{
+        padding: 5px;
+        cursor: pointer;
+        @include text($H80, 300, white);
+    }
+}
