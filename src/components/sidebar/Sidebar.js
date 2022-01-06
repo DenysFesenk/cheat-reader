@@ -9,7 +9,7 @@ class Sidebar extends Component {
                 <ul className="sidebar__list">
                     <li className="sidebar__item">Набиралка</li>
                     <li className="sidebar__item">Калькулятор</li>
-                    <li className="sidebar__item">Конвертер валют</li>
+                    <li className="sidebar__item">Конвертер вал ют</li>
                 </ul>
             </div>
         )

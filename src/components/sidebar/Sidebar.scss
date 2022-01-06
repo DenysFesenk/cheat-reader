@@ -15,5 +15,9 @@
         padding: 5px;
         cursor: pointer;
         @include text($H80, 300, white);
+        &:hover{
+            color: red;
+            @include transition(color);
+        }
     }
 }
