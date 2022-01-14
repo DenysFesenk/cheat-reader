@@ -13,6 +13,12 @@ class GameOfNumbers extends Component {
     this.setState({ number: this.state.number + 1 })
   }
 
+    //   changeSlide = (i) => {
+    //         this.setState(({slide}) => ({
+    //             slide: slide + i
+    //         }))
+    //     }
+
   resetNumber = () => {
     this.setState({ number: 0 })
   }
